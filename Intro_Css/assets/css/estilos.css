@@ -1,0 +1,70 @@
+/*Selector universal en todos los elementos del documento, es el menos importante por lo que no habra cambios si ya tiene otro selector*/
+/* *{
+    background-color: black;
+} */
+
+
+/*Selector de etiqueta
+Elemento HTML { */
+
+
+/* Selector de clase */
+.cuadro{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+
+/*Selector ID solo se aplica a un elemento*/
+#forma{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+/* !Important tiene la mayor jerquia casi no se ocupa*/
+
+.color{
+    background-color: aquamarine;
+}
+
+.color{
+    background-color: blue;
+}
+
+.color{
+    background-color: blueviolet;
+}
+
+/* estilos en cascada, toma el ultimo estilo aplicado */
+
+.color-texto{
+    color: blueviolet;
+    background-color: brown;
+}
+
+.forma{
+    width: 300px;
+    height: 100px;
+}
+
+.borde{
+    /* border: 3px solid rgb(0, 0, 0); */
+    border-top: 3px solid black;
+    border-left: 3px dashed green;
+    border-bottom: 3px groove pink;
+    border-right: 3px double brown;
+
+    text-align: center;
+
+}
+
+p{
+    font-family: cursive;
+    font-size: medium;
+}
+
+/* color del texto solo color y background color es para fondo*/
