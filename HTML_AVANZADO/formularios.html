@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Propios-->
+    <link rel="stylesheet" href="assets/css/Formularios.css">
+    <title>Formularios</title>
+
+</head>
+<body>
+    <!--Etiqueta de formularios si no se coloca method viene como defecto get (visible) y post (oculto)-->
+    <!-- <form action="" method="post"></form> -->
+    <form> 
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" size="40">
+        <input type="number" min="1" max="45" step="5">
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="datetime-local">
+        <input type="time">
+        <input type="password">
+        <input type="file">
+        <input type="range">
+        <input type="checkbox" value="si"
+        checked>
+        <input type="radio" name="n">
+        <input type="radio" name="n">
+        <input type="email" required>
+        <select name="menu" id="">
+            <option value="">uno</option>
+            <option value="">dos</option>
+            <option value="">tres</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="color" id="inputColor" value="ff0000">
+        <input type="reset" value="limpiar">
+        <input type="submit">
+
+
+    </form>
+
+    <script>
+        const color = document.querySelector("#inputColor")
+        console.log(color);
+        
+        color.addEventListener("change", function (e){
+            document.body.style.backgroundColor = e.target.value;
+        } )
+    </script>
+    
+    <hr>
+    <h1>Formulario</h1>
+    <form class="formulario">
+        <div class="nombre">
+            <label for="nombre" class="acomodoLabel">Nombre:</label>
+            <input type="text" id="nombre" class="colorFondo" required placeholder="Nombre">
+        </div> <br>
+        <div class="apellido">
+            <label for="apellido" class="acomodoLabel">Apellido:</label>
+            <input type="text" id="apellido" class="colorFondo" placeholder="Apellido">
+        </div> <br>
+        <div class="password">
+            <label for="password" class="acomodoLabel"> Contraseña:</label>
+            <input type="password" id="password" class="colorFondo" required>
+        </div> <br>
+        <div class="correo">
+            <label for="correo" class="acomodoLabel">Correo</label>
+            <input type="email" id="correo" class="colorFondo">
+        </div> <br>
+        <div class="enviar">
+            <input class="btn-enviar" type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>
+<!--input tipo en linea -->
+<!--placeholder texto guia-->
+<!--Value texto que ya viene integrado-->
+<!--required: requerido u obligatorio-->
+<!--submit sirve para enviar datos-->
+<!--Atributo size: por defecto viene en 20 caracteres-->
+<!--minlength: minimo de caracteres-->
+<!--mazlength: maximo de caracteres-->
+<!--atributo number
+    min= valor minimo de numeros max=valor maximo de numero Step=intervalo de numeros-->
+<!--date: Fecha dia / mes / año-->
+<!--radio: para elegir opciones diferentes, necesitas ponerle el mismo nombre para seleccionar la ocpion en diferentes radios.-->
