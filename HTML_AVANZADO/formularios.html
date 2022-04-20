@@ -42,26 +42,17 @@
 
 
     </form>
-
-    <script>
-        const color = document.querySelector("#inputColor")
-        console.log(color);
-        
-        color.addEventListener("change", function (e){
-            document.body.style.backgroundColor = e.target.value;
-        } )
-    </script>
-    
+  
     <hr>
     <h1>Formulario</h1>
-    <form class="formulario">
+    <form class="formulario" id="formularioDatos">
         <div class="nombre">
             <label for="nombre" class="acomodoLabel">Nombre:</label>
-            <input type="text" id="nombre" class="colorFondo" required placeholder="Nombre">
+            <input type="text" id="nombre" name="Nombre" class="colorFondo" required placeholder="Nombre">
         </div> <br>
         <div class="apellido">
             <label for="apellido" class="acomodoLabel">Apellido:</label>
-            <input type="text" id="apellido" class="colorFondo" placeholder="Apellido">
+            <input type="text" id="apellido" name="Apellido" class="colorFondo" placeholder="Apellido">
         </div> <br>
         <div class="password">
             <label for="password" class="acomodoLabel"> Contraseña:</label>
@@ -75,6 +66,9 @@
             <input class="btn-enviar" type="submit" value="Enviar">
         </div>
     </form>
+
+<!--scripts propios-->
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
@@ -90,3 +84,4 @@
     min= valor minimo de numeros max=valor maximo de numero Step=intervalo de numeros-->
 <!--date: Fecha dia / mes / año-->
 <!--radio: para elegir opciones diferentes, necesitas ponerle el mismo nombre para seleccionar la ocpion en diferentes radios.-->
+<!--la clase name hace que aparezcan en consola si no se pone no aparecen-->
