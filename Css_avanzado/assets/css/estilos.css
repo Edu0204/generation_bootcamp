@@ -1,0 +1,55 @@
+/* Posicion para cambiar la posicion de los elementos */
+/* son las posiciones que se pueden mover  bottom - top - left - rigth  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+h1{
+    /* position: relative;
+    top: 150px;
+    z-index: 2; */
+}
+
+.cuadro{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    /*display: inline-block;*/
+
+}
+
+.div1{
+    background-color: aqua;
+   /*  position: static;
+    bottom: 100px; */
+}
+
+.div2{
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+}
+
+.div3{
+    background-color: tomato;
+    
+}
+
+.padre{
+    width: 500px;
+    height: 400px;
+    position: relative;
+}
+
+
+
+/* z-index propiedad que permite que los elementos sean capas con valores numericos  */
+/* colocando posicion relative al elemento padre el div2 lo toma como referencia para su posicionamiento */
+/* position: fixed se ancla a la pagina y baja junto con la barra scroll del navegador */
+/*sticky posocion se pega sobre un elemento siempre hay que poner top para que se empiece a mover */

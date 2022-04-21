@@ -1,0 +1,43 @@
+
+/*vh Viewportheigth unidad de medida para hacer responsivos las paginas segun este dividida la pagina*/
+/*display es importante que los elementos se acomden en un objeto padre
+para que se puedan acomodar de otra manera afectaria el acomodo de la pagina completa */
+
+.padre{
+    width: 80%;
+    height: 60vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+/*
+row (fila)
+justify content los acomoda horizontalmente (derecha - izquierda)
+align items los acomoda verticalmente (arriba a abajo)
+
+Column (columna)
+justify content los acomoda verticalmente (arriba a abajo)
+align items los acomoda horizontalmente (derecha - izquierda)
+
+*/
+
+.hijo{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.div1{
+    background-color: aqua;
+}
+
+.div2{
+    background-color: blueviolet;
+}
+
+.div3{
+    background-color: brown;
+}
+
