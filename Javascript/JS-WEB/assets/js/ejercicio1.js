@@ -1,0 +1,25 @@
+"use strict"
+
+
+//********************************
+//*** Eventos del teclado
+
+
+// keydown
+// keypress
+// keyup
+
+
+window.addEventListener("keydown", function (e) {
+	console.log('Pulsando tecla');
+	console.log(String.fromCharCode(e.keyCode))
+})
+
+window.addEventListener("keypress", function (event) {
+	console.log('Tecla pulsada')
+})
+
+
+window.addEventListener("keyup", function (event) {
+	console.log('Tecla liberada')
+})
