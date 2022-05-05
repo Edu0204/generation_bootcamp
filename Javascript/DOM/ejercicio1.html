@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+  </head> 
+  
+  <body>
+    <p id="text">JavaScript Exercises #1</p> 
+    <div>
+      <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+  </body>
+
+  <script>
+      //Modificar el estilo del texto del párrafo mediante código javascript. Ejemplo de archivo HTML:
+      const $parr = document.getElementById('text');
+      const js_style = () => {
+        $parr.style.color = "blue"
+        $parr.style.fontFamily = "helvetica"
+        $parr.style.fontSize = "34px"
+      }
+  </script>
+
+
+</html>

@@ -1,0 +1,31 @@
+<!-- Escriba una función de JavaScript para obtener los valores de Nombre y Apellido del siguiente formulario.
+
+Imprime los nombres en la consola. -->
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset=utf-8 />
+      <title>Return first and last name from a form</title>
+    </head>
+    
+    <body>
+      <form id="form1" onsubmit="getFormvalue(event)">
+          First name: <input type="text" name="fname" value="David"><br>
+          Last name: <input type="text" name="lname" value="Beckham"><br>
+        <input type="submit" value="Submit">
+      </form>
+    </body>
+    
+    <script>
+        const getFormvalue = (event) => {
+            event.preventDefault();
+            const $nombre = document.querySelectorAll('input');
+            console.log($inputs[0].value);
+            console.log($inputs[1].value);
+        }
+
+    </script>
+
+
+</html>
